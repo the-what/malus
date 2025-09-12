@@ -23,6 +23,11 @@
 # Load required libraries
 source("sdm_analysis/libraries.R")
 
+# Need to load some map data to use as strata for thinning occurrence records
+source("scripts/load_maps.R")
+# This script also sources layers for plotting including country boundaries
+# And ecoregion data used below in background data
+
 
 # 001 Load and Clean Species Occurrence Data ------------------------------
 message("** Loading & Cleaning Occurrence Data ", date())
@@ -154,11 +159,6 @@ message("** Data Cleaned ", date())
 
 # 002 Thin Occurrence Data ------------------------------------------------
 # See scripts/occ_thin.R
-
-# Need to load some map data to use as strata for thinning occurrence records
-source("scripts/load_maps.R")
-# This script also sources layers for plotting including country boundaries
-# And ecoregion data used below in background data
 
 message("** Thinning Records: ", date())
 
