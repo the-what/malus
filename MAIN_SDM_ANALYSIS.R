@@ -571,7 +571,7 @@ message("** Realized Niche PCA: ", date())
 # See malus_pca.R for plotting
 # This analysis builds off function created by authors of the ecospat and ade4 packages
 # I source these custom functions to save space herein
-source("./scripts/pca_functions.R")
+source("./scripts/pca_and_gap_functions.R")
 
 # Convert BG Rasters to Matrices for PCA
 bg_mat_full <- values(wclim_chl_subs) %>% na.omit() # remove NA Values
