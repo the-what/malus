@@ -21,7 +21,7 @@
 
 # 000 Source Required Libraries -------------------------------------------
 # Load required libraries
-source("sdm_analysis/libraries.R")
+source("scripts/libraries.R")
 
 # Need to load some map data to use as strata for thinning occurrence records
 source("scripts/load_maps.R")
